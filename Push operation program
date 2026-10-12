@@ -1,0 +1,24 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int stack[5], top = -1, value;
+
+    cout << "Enter element to push: ";
+    cin >> value;
+
+    if (top == 4)
+    {
+        cout << "Stack Overflow";
+    }
+    else
+    {
+        top++;
+        stack[top] = value;
+        cout << "Element pushed successfully";
+    }
+
+    return 0;
+}
